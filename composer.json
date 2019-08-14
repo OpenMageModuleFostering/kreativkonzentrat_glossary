@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Kreativkonzentrat_Glossary",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "Adds a glossary to your store",
+    "authors": [
+    {
+        "name": "Felix Moche",
+        "email": "info@kreativkonzentrat.de"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

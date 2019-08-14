@@ -1,0 +1,18 @@
+<?php
+/**
+ * @category	design
+ * @package		base_default
+ * @copyright	Kreativkonzentrat GbR 2012
+ *
+ * Date: 04.03.12, 12:56
+ */
+?>
+<h4><?php echo $this->__('Glossary') ?></h4>
+<?php
+echo $this->getChildHtml('glossary_letter_navigation');
+$collection = $this->getGlossary();
+foreach ($collection as $item) :?>
+	<div class="glossary_entry">
+		<h2><a href="<?php echo $item->getUrl(); ?>"><?php echo $item->getTitle(); ?></a></h2>
+	</div>
+<?php endforeach; ?> 

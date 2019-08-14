@@ -1,0 +1,19 @@
+<?php
+/**
+ * @category	design
+ * @package		base_default
+ * @copyright	Kreativkonzentrat GbR 2012
+ *
+ * Date: 04.03.12, 12:50
+ */
+?>
+<?php
+$collection = $this->getGlossary();
+?>
+<h4><?php echo $this->__('Glossary') ?></h4>
+<?php
+foreach ($collection as $item) :?>
+    <div class="glossary_entry">
+        <h3><a href="<?php echo $item->getUrl(); ?>" title="<?php echo $this->__('View glossary entry')?>"><?php echo $item->getTitle();?></a></h3>
+    </div>
+<?php endforeach;?>
